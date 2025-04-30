@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root[data-theme="light"] {
+    --text: #091b15;
+    --background: #ffffff;
+    --background-70: #ffffffb7;
+    --primary: #32f1d1;
+    --secondary: #7beac5;
+    --accent: #12f168;
+}
+:root[data-theme="dark"] {
+    --text: #e4f6f0;
+    --background: #081c16;
+    --background-70: #081c16a1;
+    --primary: #32f1d1;
+    --secondary: #19b366;
+    --accent: #12f168;
+    --button-text: #3b3b3b;
+}
+
+body {
+    background-color: var(--background);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    background: linear-gradient(
+        to bottom,
+        var(--background) 30%,
+        var(--background-70)
+    );
+    backdrop-filter: blur(4px);
+}
+
+nav img {
+    margin-left: 25px;
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav li a {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--text);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+#banner {
+    margin-top: 230px;
+    padding: 0 100px;
+}
+* {
+    color: var(--text);
+}
